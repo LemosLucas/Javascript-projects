@@ -1,0 +1,44 @@
+body {
+    background: #018DED url(http://unsplash.it/1500/1000?image=881&blur=5);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.clock {
+    border: 20px solid white;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .pointer {
+        margin: 0;
+        padding: 0;
+        border: 3px solid black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s cubic-bezier(0.19, 2.78, 0.6, 1.08);
+        transform-origin: left;
+    }
+
+    .min-pointer {
+        transform: rotate(120deg);
+        width: 110px;
+    }
+
+    .sec-pointer {
+        transform: rotate(50deg);
+        width: 110px;
+    }
+
+    .hour-pointer {
+        transform: rotate(0deg);
+        width: 80px;
+    }
+}
